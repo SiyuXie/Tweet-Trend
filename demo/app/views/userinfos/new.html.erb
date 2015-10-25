@@ -1,0 +1,27 @@
+<h1>New Userinfo</h1>
+<!-- 
+<%= render 'form' %> -->
+
+
+
+<%= form_tag new_userinfo_path, :method => 'get'  do %>
+
+<td>
+	<%= label_tag :create, "name"%>
+   <%= text_field_tag :user_name, params[:user_name]%>
+</td>
+<td>
+	 <%= label_tag :create, "Country"%>
+   <%= text_field_tag :country, params[:country]%>
+</td>
+<td>
+	<%= label_tag :create, "City"%>
+   <%= text_field_tag :city, params[:city]%>
+</td>
+ 
+<%= button_to "Save Info", action: "create" %> 
+
+
+ <% end %>
+
+<%= link_to 'Back', userinfos_path, method: :create %>

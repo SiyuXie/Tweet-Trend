@@ -1,0 +1,1 @@
+Demo::Application.config.secret_token = ENV['SECRET_TOKEN'] || 'a4cd62d31a4752f2b2adab7d88d9523d49225d49748790adc2733fba67ae0477996dc24f5692dbc132a30537def7f96b4ff7e763fee8b45f4927ad47c3de1b30'
